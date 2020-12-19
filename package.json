@@ -5,7 +5,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "eslint": "eslint . --ext .tsx --ext .ts",
+    "eslint:fix": "eslint . --ext .tsx --ext .ts"
   },
   "dependencies": {
     "next": "latest",

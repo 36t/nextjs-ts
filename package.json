@@ -34,5 +34,13 @@
     "prettier": "^2.2.1",
     "typescript": "4.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --max-warnings=0 --ext .tsx --ext .ts --fix"
+  }
 }

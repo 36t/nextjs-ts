@@ -5,7 +5,7 @@
     "dev": "next",
     "build:next": "next build",
     "build:dist": "next export -o dist",
-    "build": "build:next build:dist",
+    "build": "run-s build:next build:dist",
     "start": "next start",
     "type-check": "tsc",
     "eslint": "eslint . --ext .tsx --ext .ts",
